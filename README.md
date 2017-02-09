@@ -1,4 +1,5 @@
-# Portfolio - Joseph Szendre, BYU, Applied Computation and Mathematics
+# Portfolio
+Joseph Szendre, BYU, Applied Computation and Mathematics
 
 These are the most notable algorithms and programs that I've built my junior year in the ACME program through February 2017.
 
