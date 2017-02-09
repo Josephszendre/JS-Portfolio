@@ -1,7 +1,10 @@
-# Portfolio - Joseph Szendre
-These are the most notable algorithms and programs that I've built through February 2017 in the Applied Mathematics and Computation degree at Brigham Young University
+# Portfolio - Joseph Szendre, BYU, Applied Computation and Mathematics
 
-The code requires Python 2.7 to be installed with various scientific data science libraries installed. A data science package manager like Anaconda would install most of the needed libraries. Any others can be installed with pip or conda (if installed).
+These are the most notable algorithms and programs that I've built my junior year in the ACME program through February 2017.
+
+The code requires Python 2.7 to be installed with various scientific and numerical libraries installed. Although not all necessary packages come standard, Anaconda is recommended; however pip (pip install pckg_name) can also install all or any additional libraries needed.
+
+All source code files are either .py or .ipynb (only 1), all other files .pyc, .npz, .png are data files.
 
 The specifications for these labs can be found at acme.byu.edu
 
