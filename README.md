@@ -5,9 +5,11 @@ These are the most notable algorithms and programs that I've built my junior yea
 
 The code requires Python 2.7 to be installed with various scientific and numerical libraries installed. Although not all necessary packages come standard, Anaconda is recommended; however pip (pip install pckg_name) can also install all or any additional libraries needed.
 
+As of right now only the Donald Trump Sentence Generator has sample output.
+
 All source code files are either .py or .ipynb (only 1), all other files .pyc, .npz, .png are data files.
 
-The specifications for these labs can be found at acme.byu.edu
+The specifications for these labs can be found at acme.byu.edu.
 
 Volume 1 Labs
 http://www.acme.byu.edu/?page_id=2067 
