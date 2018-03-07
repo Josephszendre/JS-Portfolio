@@ -17,4 +17,4 @@ http://www.acme.byu.edu/?page_id=2067
 Volume 2 Labs
 http://www.acme.byu.edu/?page_id=2085
 
-Note that Python is a weakly typed language with extensive operator overloading. If any section of code is confusing reading the specifications document may help.
+Note that Python is a weakly typed language with extensive operator overloading, which can make code difficult to understand. These weren't graded for readability so I've tried to add additional comments. 
