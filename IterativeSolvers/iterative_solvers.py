@@ -332,5 +332,5 @@ if __name__=="__main__":
     y=np.linspace(1,300,300)
     X,Y=np.meshgrid(x,y)
     Z=np.sin(X)+5*np.tan(Y)
-    hot_plate(2500)
+    hot_plate(500)
     #print np.log2(la.norm(A.dot(sparse_sor(A,b,1.1,tol=1e-30,maxiters=10))-b,ord=np.inf))
