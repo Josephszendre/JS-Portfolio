@@ -27,9 +27,9 @@ def forecast(days):
     transition = np.array([[0.7, 0.6], [0.3, 0.4]])
     a=[[1.],[0.]]
     f=[]
-    for i in xrange(0,days):
+    for i in range(0,days):
          a=np.dot(transition,a)
-         print a
+         print(a)
          f+=[np.random.binomial(1, transition[1, 0])]
 
     return f
@@ -80,7 +80,7 @@ def steady_state(A, tol=1e-12, N=40):
     """
     x2=np.random.random((2,))
     #x1=np.zeros((2,))
-    for i in xrange(0,N):
+    for i in range(0,N):
         x1=x2.copy()
         x2=np.dot(A,x1)
         if la.norm(x2-x1,ord=1)<tol:
@@ -127,8 +127,8 @@ class SentenceGenerator(object):
         states=["$tart"]+uniq_words + ["$top"]
         tran=np.zeros((len(uniq_words)+2,len(uniq_words)+2))
 
-        for j in xrange(len(words)):
-            for k in xrange(len(words[j])):
+        for j in range(len(words)):
+            for k in range(len(words[j])):
                 word=words[j][k]
                 
                 if k==len(words[j])-1:
@@ -142,20 +142,14 @@ class SentenceGenerator(object):
                     next=words[j][k+1]
                     tran[uniq_words.index(next)+1,uniq_words.index(word)+1]+=1
 
-
-        
         
         tran[len(uniq_words)+1,len(uniq_words)+1]+=1
         a=tran.sum(axis=0)
         self.tran=(tran/a)
 
 
-        
         self.uniq_words=uniq_words    
         thefile.close()
-
-        
-
     
 
     def babble(self):
@@ -185,23 +179,6 @@ class SentenceGenerator(object):
             
 
 if __name__=="__main__":
-
-    #print random_markov(3
-    #print forecast(10)
-    
-    #print random_markov(2)
-    #print four_state_forecast(50)
-    #A=random_markov(2)
-    #x=steady_state(A,1e-12,80)
-    #print x
-    
     S=SentenceGenerator("DTSentences.txt")
-    for j in xrange(0,100):
-        print S.babble()
-
-    #A50=la.matrix_power(A,50)
-    #for i in xrange(0,10):
-    #     #print A50-np.dot(A50,la.matrix_power(A,i+1))
-    #     pass
-    #print x, A50
-    #print np.allclose(x,A50[:,0])
+    for j in range(0,100):
+        print (S.babble())
